@@ -70,3 +70,11 @@ triggerSyncBtn.innerText = "Simulate 1.5s Data Polling Sync Transition";
 });
 }
 });
+async function test() {
+  const res = await fetch("https://statsapi.mlb.com/api/v1/standings?leagueId=103,104");
+  const data = await res.json();
+
+  console.log(data);
+}
+
+test();
