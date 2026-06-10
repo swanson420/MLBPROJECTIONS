@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPLE-v1 Dashboard Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="mple-notification-banner" id="global-notification-banner">
+    <span class="banner-icon">⚠️</span>
+    <span class="banner-text">BASELINE SUBSTITUTION ACTIVE - LEAGUE AVERAGE PROXY APPLIED</span>
+  </div>
+
+  <main class="mple-dashboard-wrapper">
+    <section class="mple-game-module">
+      
+      <header class="mple-game-header">
+        <div class="header-top-row">
+          <div class="matchup-id-bar">
+            <span class="matchup-teams">NYY @ BOS</span>
+            <span class="matchup-uid">GAME-20260607-NYY-BOS</span>
+          </div>
+        </div>
+        
+        <div class="weather-array-dock">
+          <div class="weather-metric"><span class="label">TEMP:</span> <span class="val">74°F</span></div>
+          <div class="weather-metric"><span class="label">HUMIDITY:</span> <span class="val">58%</span></div>
+          <div class="weather-metric"><span class="label">WIND:</span> <span class="val">12 MPH</span></div>
+          <div class="weather-metric"><span class="label">DIR:</span> <span class="val">Out to LF</span></div>
+        </div>
+
+        <div class="vegas-matrix-container">
+          <table class="vegas-matrix-table">
+            <thead>
+              <tr>
+                <th>Market</th>
+                <th>FG Open</th>
+                <th>FG Current</th>
+                <th>F5 Open</th>
+                <th>F5 Current</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Moneyline</td>
+                <td>NYY -125</td>
+                <td>NYY -132</td>
+                <td>NYY -120</td>
+                <td>NYY -125</td>
+              </tr>
+              <tr>
+                <td>Totals</td>
+                <td>9.0 (O -110)</td>
+                <td>9.5 (O -115)</td>
+                <td>4.5 (O -105)</td>
+                <td>4.5 (O -115)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </header>
+
+      <div class="mple-dashboard-grid">
+        
+        <article class="edge-evaluation-card signal-bet">
+          <div class="edge-metadata-area">
+            <span class="theory-name">EDGE-042</span>
+            <span class="target-market">Target Market: F5 Over</span>
+          </div>
+          <div class="variable-data-zone">
+            <p class="edge-reasoning-text">Model projects high-velocity degradation for starting pitcher facing dynamic wOBA scaling adjustments over the trailing 4-day pitch count window...</p>
+          </div>
+          <div class="variance-core-footer">
+            <div class="metrics-row">
+              <span class="metric">Proj: <strong class="highlight">5.4 Runs</strong></span>
+              <span class="divider">|</span>
+              <span class="metric">Line: <strong>4.5</strong></span>
+              <span class="divider">|</span>
+              <span class="metric">Delta: <strong class="pos-delta">+0.9</strong></span>
+            </div>
+            <div class="signal-tag">[ SIGNAL: BET ]</div>
+          </div>
+        </article>
+
+        <article class="edge-evaluation-card signal-pass">
+          <div class="edge-metadata-area">
+            <span class="theory-name">EDGE-089</span>
+            <span class="target-market">Target Market: FG Away ML</span>
+          </div>
+          <div class="variable-data-zone">
+            <p class="edge-reasoning-text">Reliever rest profiles align perfectly with historical park factors. Minimal alpha detected in standard moneyline variance tables over the evening session run matrices.</p>
+          </div>
+          <div class="variance-core-footer">
+            <div class="metrics-row">
+              <span class="metric">Proj: <span>-128</span></span>
+              <span class="divider">|</span>
+              <span class="metric">Line: <span>-132</span></span>
+              <span class="divider">|</span>
+              <span class="metric">Delta: <span class="muted-delta">+0.04</span></span>
+            </div>
+            <div class="signal-tag">[ SIGNAL: PASS ]</div>
+          </div>
+        </article>
+
+        <article class="edge-evaluation-card signal-hit">
+          <div class="edge-metadata-area">
+            <span class="theory-name">EDGE-104</span>
+            <span class="target-market">Target Market: Home Team Total Over</span>
+          </div>
+          <div class="variable-data-zone">
+            <p class="edge-reasoning-text">Unusual humidity expansion vectors detected coupled with a significant cross-field wind vector shift. Ball metrics indicate elevated exit velocity carry metrics at this venue profile.</p>
+          </div>
+          <div class="variance-core-footer">
+            <div class="metrics-row">
+              <span class="metric">Proj: <strong class="highlight-alt">4.9 Runs</strong></span>
+              <span class="divider">|</span>
+              <span class="metric">Line: <strong>4.1</strong></span>
+              <span class="divider">|</span>
+              <span class="metric">Delta: <strong class="pos-delta-alt">+0.8</strong></span>
+            </div>
+            <div class="signal-tag">[ SIGNAL: ACTIVE EDGE ]</div>
+          </div>
+        </article>
+
+        <article class="edge-evaluation-card state-archived">
+          <div class="archived-string-container">
+            [ EDGE ARCHIVED / NO SIGNAL ]
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="spec-control-panel">
+    <div class="panel-label">MPLE-v1 ENGINE CONTROLS (DEV POLLING TOKENS)</div>
+    <button class="control-btn" id="trigger-sync-btn">Simulate 1.5s Data Polling Sync Transition</button>
+    <button class="control-btn" id="toggle-banner-btn">Toggle Baseline Banner</button>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+                                                             </html>
+                                                             
