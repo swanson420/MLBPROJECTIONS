@@ -10,7 +10,6 @@ body {
   color: #111;
 }
 
-/* Layout */
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -39,7 +38,6 @@ body {
   padding: 12px;
 }
 
-/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -56,13 +54,11 @@ tr:hover {
   cursor: pointer;
 }
 
-/* Edge colors */
 .green { color: #16a34a; font-weight: bold; }
 .blue { color: #2563eb; font-weight: bold; }
 .gray { color: #6b7280; font-weight: bold; }
 .red { color: #dc2626; font-weight: bold; }
 
-/* Panels */
 .header {
   font-weight: 600;
   margin-bottom: 8px;
