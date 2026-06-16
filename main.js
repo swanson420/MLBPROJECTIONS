@@ -1,7 +1,10 @@
 import React, { useState, useMemo } from "https://esm.sh/react@18";
 import ReactDOM from "https://esm.sh/react-dom@18/client";
 
-/* ---------------- MOCK DATA ---------------- */
+/* ---------------- SAFETY CHECK ---------------- */
+console.log("Dashboard loaded");
+
+/* ---------------- DATA ---------------- */
 
 const games = [
   {
@@ -33,10 +36,9 @@ const games = [
 function App() {
   const [selected, setSelected] = useState(null);
 
-  const selectedGame = useMemo(
-    () => games.find(g => g.id === selected) || null,
-    [selected]
-  );
+  const selectedGame = useMemo(() => {
+    return games.find(g => g.id === selected) || null;
+  }, [selected]);
 
   return (
     <div className="dashboard">
@@ -128,4 +130,5 @@ function edgeColor(edge) {
 
 /* ---------------- RENDER ---------------- */
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
