@@ -1,4 +1,9 @@
-import React, { useState, useMemo } from "https://esm.sh/react@18";
+/* ---------------- SAFETY CHECK ---------------- */
+console.log("Dashboard loaded");
+
+window.addEventListener('error', (e) => {
+  console.error("Runtime error:", e.message);
+});import React, { useState, useMemo } from "https://esm.sh/react@18";
 import ReactDOM from "https://esm.sh/react-dom@18/client";
 
 /* ---------------- SAFETY CHECK ---------------- */
